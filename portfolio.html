@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+  margin: 0;
+  background: #f2f3f7;
+  
+  text-align: center;
+  font-family: sans-serif;
+  color: #fefefe;
+  
+}
+h1{
+  color: black;
+}
+.container {
+  position: relative;
+  width: 320px;
+  margin: 100px auto 0 auto;
+  perspective: 650px;
+}
+
+.carousel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d; 
+  animation: rotate360 100s infinite forwards linear;
+  
+}
+.carousel__face { 
+  position: absolute;
+  width: 300px;
+  height: 187px;
+  top: 20px;
+  left: 10px;
+  right: 10px;
+  background-size: cover;
+  box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.5);
+  display: flex;
+  
+}
+
+span {
+  margin: auto;
+  font-size: 2rem;
+}
+
+
+.carousel__face:nth-child(1) {
+  background-image: url("2.png");
+  transform: rotateY(  0deg) translateZ(430px); }
+.carousel__face:nth-child(2) { 
+  background-image: url("3.png");
+    transform: rotateY( 40deg) translateZ(430px); }
+.carousel__face:nth-child(3) {
+  background-image: url("4.png");
+  transform: rotateY( 80deg) translateZ(430px); }
+.carousel__face:nth-child(4) {
+  background-image: url("5.png");
+  transform: rotateY(120deg) translateZ(430px); }
+.carousel__face:nth-child(5) { 
+  background-image: url("6.png");
+ transform: rotateY(160deg) translateZ(430px); }
+.carousel__face:nth-child(6) { 
+  background-image: url("7.png");
+ transform: rotateY(200deg) translateZ(430px); }
+.carousel__face:nth-child(7) { 
+  background-image: url("8.png");
+ transform: rotateY(240deg) translateZ(430px); }
+.carousel__face:nth-child(8) {
+  background-image: url("w.jpg");
+  transform: rotateY(280deg) translateZ(430px); }
+.carousel__face:nth-child(9) {
+  background-image: url("w.jpg");
+  transform: rotateY(320deg) translateZ(430px); }
+  .carousel__face:nth-child(10) {
+  background-image: url("11.jpg");
+  transform: rotateY(320deg) translateZ(430px); }
+  .carousel__face:nth-child(11) {
+  background-image: url("f.jpg");
+  
+  transform: rotateY(320deg) translateZ(430px); }
+
+
+  
+@keyframes rotate360 {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+
+    </style>
+    <title>portfolio</title>
+</head>
+<body>
+<h1>Website Portfolio</h1>
+    <div class="container">
+        <div class="carousel">
+          <div class="carousel__face"><span>About</span></div>
+          <div class="carousel__face"><span>Skills</span></div>
+          <div class="carousel__face"><span>Home</span></div>
+          <div class="carousel__face"><span>Grow your Business</span></div>
+          <div class="carousel__face"><span>About Me</span></div>
+          <div class="carousel__face"><span>Contact ME</span></div>
+          <div class="carousel__face"><span>login <form action=""></form></span></div>
+          <div class="carousel__face"><span>why choose us</span></div>
+          <div class="carousel__face"><span>human face</span></div>
+         
+        </div>
+      </div>
+     <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      
+      
+     
+    
+
+      
+
+</body>
+</html>
